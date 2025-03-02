@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой цифровой продукт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать в наш цифровой продукт</h1>
+    <p>Насладитесь интерактивным опытом!</p>
+  </header>
+  <main>
+    <section id="signup">
+      <h2>Зарегистрироваться</h2>
+      <form id="signupForm">
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" required placeholder="Введите ваш email">
+        <label for="userPass">Пароль:</label>
+        <input type="password" id="userPass" required placeholder="Создайте пароль">
+        <button type="submit">Отправить</button>
+        <div id="formStatus"></div>
+      </form>
+    </section>
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="slider" id="imageSlider">
+          <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg" alt="Природный пейзаж">
+          <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg" alt="Городской вид">
+          <img src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg" alt="Животный мир">
+        </div>
+        <div class="slider-controls">
+          <button id="prevSlide">Назад</button>
+          <button id="nextSlide">Вперёд</button>
+        </div>
+      </section>
+    <section id="promo">
+      <h2>Акции и предложения</h2>
+      <button id="showPromo">Узнать подробнее</button>
+      <div class="modal" id="promoModal">
+        <div class="modalBox">
+          <span id="closePromo">&times;</span>
+          <p>Получите скидку 20% при первой покупке!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
